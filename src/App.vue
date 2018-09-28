@@ -1,17 +1,26 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <html>
+    <head>
+      <title>Vue Learnning</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+      <div id="app">
+          <AddProductForm></AddProductForm>
+      </div>
+    </body>
+  </html>
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Products from './components/Products.vue'
+import AddProductForm from './components/AddProductForm.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Products, AddProductForm
   }
 }
 </script>
@@ -25,4 +34,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
 </style>
